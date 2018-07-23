@@ -1,0 +1,209 @@
+
+/*Main Stuff*/
+#mainRoomDiv{
+	text-align: center;
+}
+/*******************************/
+
+/*For stream name section*/
+#roomTitleCard{
+	text-align: center;
+	width: 100%;
+	background-color: #01cdfe;
+}
+
+#roomName{
+	text-align: center;
+	background: transparent;
+	color: white;
+	border: none;
+	display: inline-block;
+	margin: 0;
+	font-size: 50px;
+}
+
+#roomName:focus{
+	outline: none;
+}
+
+.expand input{
+	padding: 10px;
+	border: none;
+}
+
+.border{
+	margin-left: auto;
+	margin-right: auto;
+	height: 5px;
+	width: 40%;
+	background-color: white;
+	transform: scaleX(0);
+	transition: transform 500ms;
+	transform-origin: left;
+}
+
+input:focus + .border, .expand:focus .border{
+	transform: scaleX(1);
+}
+/*******************************/
+
+/*For progress bar*/
+
+#outerProgressBar{
+	width: 250px;
+	height: 20px;
+	margin:auto;
+}
+
+#progressBar{
+
+}
+/*******************************/
+
+/*For song information*/
+.albumArtPicture{
+	height:200px;
+	padding:5px;
+}
+
+#addSongBtn{
+	background-color: #01cdfe;
+	color: white;
+}
+
+#currentSongDiv{
+	margin: 0 auto;
+	float: none;
+	margin-bottom: 10px;
+	width: 250px;
+	background-color: #01cdfe;
+	color:white;
+
+}
+/*******************************/
+
+/*For listenerList*/
+#listenerListTitle{
+	padding: 20px;
+	border-radius: 4px;
+	margin: 10px;
+}
+
+
+#listenerList{
+	padding: 20px;
+	max-height: 370px;
+	overflow-y: scroll;
+	border-radius: 4px;
+}
+
+.listenerListCreator{
+	margin-bottom: 10px;
+	border-radius: 4px;
+}
+
+.listenerListItem{
+
+}
+/*******************************/
+
+/*For playbackQueueList*/
+#playbackQueueListTitle{
+	padding: 20px;
+	border-radius: 4px;
+	margin: 10px;
+}
+
+#playbackQueueList{
+	padding: 20px;
+	max-height: 370px;
+	overflow-y: scroll;
+	border-radius: 4px;
+}
+
+.playbackQueueListSong{
+	margin-bottom: 10px;
+	border-radius: 4px;
+}
+/*******************************/
+
+/*For the dropdown*/
+.ui-autocomplete {
+	cursor: default;
+	padding: 0;
+	margin-top: 2px;
+	list-style: none;
+	background-color: #fff;
+	border: 1px solid #ccc
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.ui-autocomplete > li {
+	padding: 3px 20px;
+}
+.ui-autocomplete > li.ui-state-focus {
+	background-color: #DDD;
+}
+.ui-helper-hidden-accessible {
+	display: none;
+}
+/*******************************/
+
+/*For the addSong div*/
+#songAddDiv{
+	margin: auto;
+}
+
+#songNameAndArtist{
+	width: 400px;
+}
+/*******************************/
+
+/*For the radioButton div*/
+#radioBtns{
+	display: inline-block;
+	margin: auto;
+	text-align: center;
+
+}
+
+.streamRadioBtn{
+	background-color: #f58356;
+	border: 1.5px solid white;
+}
+/*******************************/
+
+/*For the roomIdDiv*/
+#roomIdDiv {
+	bottom: 0;
+	width: 100%;
+	height: 30px;
+	padding: 25px;
+	text-align: center;
+	color:white;
+	font-family: 'Roboto', sans-serif;
+}
+/*******************************/
+
+.footer {
+    position: fixed;
+	margin: auto;
+    bottom: 0;
+    width: 100%;
+	height: 75px;
+	background-color: #01cdfe;
+    color: white;
+    text-align: center;
+}
+
+.footerText{
+	text-align: center;
+	vertical-align: middle;
+	line-height: 75px;
+}
+
+/*******************************/

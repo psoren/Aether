@@ -1,0 +1,27 @@
+
+When the user tries to skip a song, we can check if there is a song next
+in the playback, and if there is not, we will not let them skip
+
+////////////////////////////////////////////////////////////////
+
+Figure out what a good distance between two colors is and then use that
+(could have like blue and light blue, green and light greem, etc)
+
+////////////////////////////////////////////////////////////////
+
+Put the black and white spot with my logo in the upper left corner of the live stream page
+
+////////////////////////////////////////////////////////////////
+
+random idea: add a disappearing chat at the bottom of the screen
+(messages only stay for about 10 seconds and then fade away)
+
+////////////////////////////////////////////////////////////////
+
+random idea: make the background match the album art somehow
+
+////////////////////////////////////////////////////////////////
+
+We are calling stateChange every second.  If there is a song playing, it will update the UI.
+
+ 

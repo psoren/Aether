@@ -1,0 +1,17 @@
+<% include partials/header %>
+
+<div class="container">
+	<br>
+	<div class="card" style="text-align:center">
+		<div class="card-body">
+			<h5 class="card-title">
+				<%= (!!locals.errorMsg)?errorMsg:'There was an error' %></h5>
+				<p class="card-text">Click the button below to try again.</p>
+			</div>
+			<a href='/' class="btn btn-primary">Try Again</a>
+			<br>
+			<br>
+		</div>
+	</div>
+
+	<% include partials/footer %>

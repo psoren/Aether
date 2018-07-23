@@ -1,0 +1,9 @@
+
+1. TODO: Fix "WebSocket is already in CLOSING or CLOSED state" error.
+There are two stackoverflow articles in the bottom left on this issue.
+Read them and fix the issue
+
+2. TODO: When you add a song to the queue, playback starts over at the beginning of the queue
+(If a song has already finished, it stays in the queue.
+I think what we need to do is check at the end of every song, remove the song that just finished,
+and add any new songs that are pending to be added.)

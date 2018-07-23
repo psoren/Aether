@@ -1,0 +1,105 @@
+<% include partials/header %>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="/stylesheets/liveStreamPage.css" rel="stylesheet">
+
+<div id='roomTitleCard'>
+
+	<div class="expand" tabindex="0">
+		<form id="roomNameForm">
+			<input type="hidden" id="roomID"/>
+			<input type="text" id ='roomName' value = ''
+			autocomplete="off" autocorrect="off"
+			autcapitalize="off" spellcheck="false">
+			<div class="border"></div>
+		</form>
+	</div>
+
+</div>
+<div class= 'container' id = 'mainRoomDiv'>
+
+	<!--Album art, song info, and user list-->
+	<div class = "row">
+
+		<div class = 'col'>
+			<div class="card" id="listenerListTitle">
+				<em>Listeners:</em>
+			</div>
+			<ul class="list-group" id = "listenerList"></ul>
+		</div>
+
+		<div class = 'col'>
+			<br>
+			<div id = 'albumArtDiv'></div>
+
+			<div class="progress" id ="outerProgressBar">
+				<div class="progress-bar" id="progressBar" role="progressbar" ></div>
+			</div>
+
+			<div class="card" id = "currentSongDiv"></div>
+		</div>
+		<br>
+
+		<div class = 'col'>
+			<div class="card" id="playbackQueueListTitle">
+				<em>Upcoming songs:</em>
+			</div>
+			<ul class="list-group" id = "playbackQueueList">
+			</ul>
+		</div>
+	</div><!--end of row-->
+
+	<!--Playback buttons-->
+	<div class = 'row' id="buttonDiv">
+		<div class = 'col'>
+			<br>
+			<input type="button" id="togglePlaybackBtn" class="btn btn-light" value = "Play/Pause">
+			<input type="button" id="nextBtn" class="btn btn-light" value = "Next">
+			<br>
+			<br>
+		</div>
+	</div>
+
+	<!--Select song to add to queue-->
+	<div class = "row">
+		<div class="form-inline ui-widget" id="songAddDiv">
+			<form method="POST" id = "addSongToPlaybackQueueForm">
+				<input type='hidden' id ='songName'/>
+				<input type='hidden' id ='songArtist'/>
+				<input type="hidden" id ="songURI"/>
+				<input type="text" class="form-control songInfoInputField" id = "songNameAndArtist" placeholder="Search for a song..." required/>
+				<input type="submit" class = "btn" value="Add Song"/>
+			</form>
+		</div>
+	</div>
+
+	<br>
+
+	<div class="row">
+		<div class="btn-group" data-toggle="buttons" id='radioBtns'>
+			<label class="btn btn-primary streamRadioBtn">
+				<input type="radio" name="options" id="spotifySelect" checked>
+				Let Spotify add songs when your queue is empty
+			</label>
+		</div>
+	</div>
+</div>
+
+<div class="footer">
+	<div id = 'roomIdDiv'></div>
+</div>
+
+<script type="text/javascript">
+let socket = io.connect('http://localhost:3000');
+</script>
+
+<script src="/js/updateStateMethods.js" type="text/javascript"></script>
+<script src="/js/buttonMethods.js" type="text/javascript"></script>
+<script src='/js/socketButtonsAndForms.js' type = 'text/javascript'></script>
+<script src="/js/socketClientMethods.js" type="text/javascript"></script>
+<script src ="/js/socketSetIntervalMethods.js" type="text/javascript"></script>
+<script src ="/js/socketUpdatingUI.js" type="text/javascript"></script>
+<script src="/js/callSetIntervalMethods.js" type="text/javascript"></script>
+
+</body>
+</html>

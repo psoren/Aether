@@ -1,0 +1,11 @@
+
+There could be an add to library button so if listeners like a song, they can
+add it to their library
+
+You could show which of your friends are streaming on the home screen
+
+could also show the most popular streams by number of listeners
+
+There need to be more ways to add songs to the queue...maybe be able to select rapCaviar or something...
+
+Add an add song button and a start playing playlist button

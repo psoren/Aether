@@ -1,0 +1,19 @@
+
+.loginUserCard{
+	text-align: center;
+	margin: auto;
+}
+
+#loginBtn {
+	font-size: 20px;
+	border-radius: 4em;
+	color: white;
+	background: linear-gradient(to right, #1DB954, #43DF7A); /*lightened 15 percent*/
+	padding: 0.7em 1.5em;
+	text-transform: uppercase;
+	width: 5em;
+}
+
+#loginBtn:hover {
+	background:linear-gradient(to right, #43DF7A, #69FFA0); /*lightened 15 percent*/
+}

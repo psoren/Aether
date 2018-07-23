@@ -1,0 +1,78 @@
+<% include partials/header %>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="/stylesheets/streamSelectPage.css" rel="stylesheet">
+
+<div class="card text-white" id="streamWelcomeCard">
+	<div class="card-body">
+		<h3 class="card-title">Welcome <%= (!!locals.name)? locals.name: '' %></h3>
+		<p class="card-text">Create a room to control the playback, or join someone else's room with their room ID.</p>
+	</div>
+</div>
+
+<div id = "selectOperation"style="text-align:center" class="container">
+	<div class="row">
+		<div class="col card streamCard">
+			<div class="card-body">
+				<h5 class="card-title">Create a room</h5>
+				<br>
+				<form action="createStream" method="POST">
+					<input type="text" name ='streamName' class='streamField'
+					required placeholder="Room name..."
+					autocomplete="off" autocorrect="off"
+					autcapitalize="off" spellcheck="false">
+					<div class="border"></div>
+					<br>
+					<input type = "submit" class="btn btn-light" value="Create room">
+				</form>
+			</div>
+		</div>
+		<div class="col card streamCard">
+			<div class="card-body">
+				<h5 class="card-title">Join a room</h5>
+				<br>
+				<form action="joinStream" method="POST">
+					<input type="text" name ='streamID' class='streamField'
+					required placeholder="Room ID..."
+					autocomplete="off" autocorrect="off"
+					autcapitalize="off" spellcheck="false">
+					<div class="border"></div>
+					<br>
+					<input type = "submit" class="btn btn-light" value="Join room">
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="row aboutCard">
+		<div class="card-body">
+
+			<div class="aboutCardTitle">
+				<h4>Aether lets you listen to your music with your friends</h4>
+			</div>
+			<br>
+			<h5>Here's how it works:</h5>
+
+			<ul>
+				<li>You create a room</li>
+				<li>In that room, there is a roomID that you can give to your friends</li>
+				<li>They can login and join your room</li>
+				<li>Once they join, the playback of everyone in the room is synchronized</li>
+				<li>The creator can start or stop playback and skip songs</li>
+				<li>Everyone in the room can add songs to the queue</li>
+				<li>Go ahead and try it!</li>
+			</ul>
+
+
+		</div>
+	</div>
+
+
+
+</div>
+
+<div id="footer">
+	<p></p>
+</div>
+
+<% include partials/footer %>
