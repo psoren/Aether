@@ -34,9 +34,13 @@ $('#addSongToPlaybackQueueForm').on('submit', function(e){
 	let songName = $('#songName').val();
 	let songArtist = $('#songArtist').val();
 	let roomID = getParameterByName('roomID');
-	$('#songURI').val('');
-	$('#songName').val('');
-	$('#songArtist').val('');
-	$('#songNameAndArtist').val('');
-	socket.emit('addSongToPlaybackQueueInDb', {songURI:songURI, roomID:roomID, songName:songName, songArtist:songArtist});
+
+	//If these are not empty, they have selected a song
+	if(songURI !== '' && songName !== ''){
+		$('#songURI').val('');
+		$('#songName').val('');
+		$('#songArtist').val('');
+		$('#songNameAndArtist').val('');
+		socket.emit('addSongToPlaybackQueueInDb', {songURI:songURI, roomID:roomID, songName:songName, songArtist:songArtist});
+	}
 });
