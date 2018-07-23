@@ -22,6 +22,7 @@ exports.loginUser = function(req, res){
 		}
 		return text;
 	};
+	
 	stateKey = 'spotify_auth_state';
 	let state = generateRandomString(16);
 	res.cookie(stateKey, state);

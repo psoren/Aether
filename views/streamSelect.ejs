@@ -75,4 +75,33 @@
 	<p></p>
 </div>
 
+
+<script src="/js/updateStateMethods.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+	let accessToken = getParameterByName('access_token');
+	let refreshToken = getParameterByName('refresh_token');
+	localStorage.accessToken = accessToken;
+
+	console.log('the access token is _____' + localStorage.accessToken);
+});
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
 <% include partials/footer %>
