@@ -32,6 +32,11 @@ async function checkForSongUpdate(){
 //Update the UI according to the state of the user's playback
 async function stateChange(){
 
+	//Set the home page link
+	$('#homePageLink').attr('href', 'https://aethersocial.herokuapp.com/streamSelect#' +
+	'access_token=' + getParameterByName('access_token')
+	+'&refresh_token=' + getParameterByName('refresh_token'));
+
 	//set volume to be max volume
 	await fetch('https://api.spotify.com/v1/me/player/volume?volume_percent=100',{
 		method:'PUT',

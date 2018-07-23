@@ -1,5 +1,18 @@
 
-/*Main Stuff*/
+
+#homePageLink{
+	text-align: center;
+	width: 100%;
+	background-color: #f58356;
+}
+
+#homePageLink{
+	text-align: center;
+	font-size: 50px;
+	color: white;
+	border: none;
+}
+
 #mainRoomDiv{
 	text-align: center;
 }
