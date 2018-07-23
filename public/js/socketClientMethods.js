@@ -13,7 +13,6 @@ socket.on('setNewAccessToken', function(data){
 	history.replaceState({}, 'Aether', newWindowPath);
 });
 
-//////Sockets////////////////////////////////////////////////////
 //When a socket first connects to the page
 socket.on('connect', function(){
 	fetch('https://api.spotify.com/v1/me',{
