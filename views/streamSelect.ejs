@@ -62,12 +62,8 @@
 				<li>Everyone in the room can add songs to the queue</li>
 				<li>Go ahead and try it!</li>
 			</ul>
-
-
 		</div>
 	</div>
-
-
 
 </div>
 
@@ -83,25 +79,12 @@
 $(document).ready(function(){
 	let accessToken = getParameterByName('access_token');
 	let refreshToken = getParameterByName('refresh_token');
-	localStorage.accessToken = accessToken;
+	//localStorage.accessToken = accessToken;
+
+	localStorage.accessToken = 'pod racing';
 
 	console.log('the access token is _____' + localStorage.accessToken);
 });
-
-
-
-
-
-
-
 </script>
-
-
-
-
-
-
-
-
 
 <% include partials/footer %>
