@@ -80,9 +80,10 @@ $(document).ready(function(){
 	let refreshToken = getParameterByName('refresh_token');
 	//localStorage.accessToken = accessToken;
 
-	localStorage.accessToken = 'pod racing';
+	localStorage.accessToken = accessToken;
+	localStorage.refreshToken = refreshToken;
 
-	console.log('the access token is _____' + localStorage.accessToken);
+	console.log('the access token is: ' + localStorage.accessToken);
 });
 </script>
 
