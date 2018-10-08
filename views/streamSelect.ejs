@@ -59,7 +59,7 @@
 				<li>They can login and join your room</li>
 				<li>Once they join, the playback of everyone in the room is synchronized</li>
 				<li>The creator can start or stop playback and skip songs</li>
-				<li>Everyone in the room can add songs to the queue helooooo</li>
+				<li>Everyone in the room can add songs to the queue</li>
 			</ul>
 		</div>
 	</div>
@@ -77,16 +77,10 @@
 
 $(document).ready(function(){
 	let accessToken = getParameterByName('access_token');
-
-	console.log('access token from url is:' + accessToken);
-
 	let refreshToken = getParameterByName('refresh_token');
-	//localStorage.accessToken = accessToken;
 
 	localStorage.accessToken = accessToken;
 	localStorage.refreshToken = refreshToken;
-
-	console.log('the access token is: ' + localStorage.accessToken);
 });
 </script>
 
