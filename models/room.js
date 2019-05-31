@@ -1,7 +1,7 @@
 let mongoose = require('mongoose');
 let shortid = require('shortid');
 let Schema = mongoose.Schema;
-
+s
 let roomSchema = new Schema({
 	_id: {type: String, 'default':shortid.generate},
 	name: {type: String, required: true, max: 100},
