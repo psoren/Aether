@@ -24,7 +24,7 @@
     "request": "^2.87.0",
     "serve-favicon": "^2.5.0",
     "shortid": "^2.2.8",
-    "socket.io": "^2.1.1",
+    "socket.io": "^2.5.0",
     "url-search-params-polyfill": "^4.0.0"
   }
 }
